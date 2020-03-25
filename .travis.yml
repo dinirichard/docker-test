@@ -5,3 +5,12 @@ services:
 script:
     - docker build -t dini/node .
     - docker images dini/node
+
+before_deploy:
+    - docker login -u dinirichard -p Solo1992.
+
+deploy:
+    provider: script
+    script: docker push dini/node
+    on: 
+        branch: master
