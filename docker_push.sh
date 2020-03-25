@@ -1,2 +1,2 @@
 #!/bin/bash
-docker push dini/node
+docker push dinirichard/node

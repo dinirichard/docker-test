@@ -3,8 +3,8 @@ services:
     - docker
 
 script:
-    - docker build -t dini/node .
-    - docker images dini/node
+    - docker build -t dinirichard/node .
+    - docker images dinirichard/node
 
 before_deploy:
     - docker login -u dinirichard -p Solo1992.
