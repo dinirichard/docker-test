@@ -7,7 +7,8 @@ script:
     - docker images dini/node
 
 before_deploy:
-    - docker login -u <dinirichard> -p <Solo1992.>
+    - docker login -u dinirichard -p Solo1992.
+
 
 deploy:
     provider: script
